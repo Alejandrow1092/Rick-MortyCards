@@ -1,0 +1,82 @@
+@font-face{
+    font-family: rick;
+    src: url("shlop rg.ttf")
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --indicolite: #06506b80;
+    --letras: #00CED1;
+    --fondoTarjeta: rgb(25, 25, 32);
+    --verde: #64ac00; 
+    /*--verde1:  #64ac00be;*/
+    --verde1:  #00ced19a;
+}
+
+body{
+    background-color: var(--fondoTarjeta);
+    font-family: rick;
+}
+
+h1{
+    text-align: center;
+    font-size: 7em;
+    color: var(--letras)
+}
+
+/*==================================================
+ * Contenido general de todas las tarjetas
+ * ===============================================*/
+
+
+section[id="contenedor"]{
+    max-width: auto;
+    max-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+/*==================================================
+ * Elementos de cada tarjeta
+ * ===============================================*/
+
+section[id="tarjeta"]{
+
+    
+    width: 25vw;
+    height: 75%;
+
+    background-color:var(--indicolite);
+    margin: 30px;
+    padding: 15px;
+    border-radius: 15px 30px;
+    position: relative;
+    -webkit-box-shadow:0 1px 4px var(--verde1), 0 0 40px var(--verde1) inset;
+       -moz-box-shadow:0 1px 4px var(--verde1), 0 0 40px var(--verde1) inset;
+            box-shadow:0 1px 4px var(--verde1), 0 0 40px var(--verde1) inset;
+}
+
+section img{
+    width: 70%;
+    margin-left: 3.5vw;
+    margin-top: 1rem;
+}
+
+section h3,p{
+    font-size: 1.9em;
+    color: var(--verde);
+}
+
+@media screen and (max-width: 375px){
+    section[id="tarjeta"]{
+        height: 50vh;
+        min-width: 70%;
+    }
+}
