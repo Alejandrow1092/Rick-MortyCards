@@ -76,7 +76,7 @@ section h3,p{
 
 @media screen and (max-width: 375px){
     section[id="tarjeta"]{
-        height: 50vh;
+        height: 100%;
         min-width: 70%;
     }
 }
